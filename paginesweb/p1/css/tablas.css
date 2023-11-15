@@ -1,0 +1,11 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+body {
+    background-color: powderblue;
+}
+h1 {
+    color: blue;
+} 
