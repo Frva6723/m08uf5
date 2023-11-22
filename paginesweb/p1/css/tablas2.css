@@ -3,6 +3,7 @@ table, th, td {
     border-collapse: collapse;
     padding: 8px;
     font-family: arial, sans-serif;
+    text-align: center;
   }
 body {
     background-color: powderblue;
