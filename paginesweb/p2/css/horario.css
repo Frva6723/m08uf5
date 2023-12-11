@@ -1,0 +1,99 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 20px;
+  }
+table { 
+    margin: auto; 
+    border-collapse: collapse;
+    width: 100%;
+    height: 800px;
+  }
+td {
+    padding: 15px; 
+    border: 1px solid #ddd; 
+}
+th {
+    background-color: #f2f2f2; 
+    padding: 15px; 
+    border: 1px solid #ddd;
+  }
+.castello {
+    background-image: url(../../../imatges/pokemon.gif);
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 80%;
+}
+.marti {
+    background-image: url(../../../imatges/totoro.gif);
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 80%;
+}
+.victor {
+    background-image: url(../../../imatges/hamster.gif);
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 100%;
+}
+.joan {
+    background-image: url(../../../imatges/tumblr_mlpufkGBSA1rkfzm8o1_500.gif);
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 230%;
+}
+.jesus {
+    background-image: url(../../../imatges/gato_meme.gif);
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 60%;
+}
+.tutoria {
+    background-image: url(../../../imatges/goku.gif);
+    background-position-x: center;
+    background-position-y: center;
+}
+.descanso {
+   background-image: url(../../../imatges/capybara2gif.gif);
+   background-position-y: center;
+   background-size: 10%;
+   color: greenyellow;
+}
+.vacio {
+    background-image: url(../../../imatges/portal.gif);
+    background-position-y: center;
+    background-position-x: center;
+}
+.asignatura{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    font-size: 150%;
+}
+.profe {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    font-style: italic;
+    text-align: left;
+    font-size: 150%;
+}
+.aula {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    font-style: italic;
+    text-align: right;
+    font-size: 150%;
+}
+.profechar {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: orange;
+    font-style: italic;
+    text-align: right;
+    font-size: 150%;
+}
+.aulachar {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: orange;
+    font-style: italic;
+    text-align: right;
+    font-size: 150%;
+}
