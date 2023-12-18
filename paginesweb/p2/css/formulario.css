@@ -1,0 +1,71 @@
+body {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input, select {
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.formacio {
+    color: blue;
+    font-style: italic;
+}
+.nacionalidad {
+    color: orange;
+    font-style: italic;
+}
+.idiomes {
+    color: red;
+    font-style: italic;
+}
+.altura{
+    color: violet;
+    font-style: italic;
+}
+.email{
+    color: hotpink;
+    font-style: italic;
+}
