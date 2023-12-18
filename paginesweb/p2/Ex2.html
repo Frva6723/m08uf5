@@ -9,18 +9,40 @@
 <body>
     <div class="container">
         <h1>Curriculum</h1>
-        <form action="#" method="post" id="rolForm">
+        <form action="../p2/php/form.php" id="rolForm">
             <fieldset>
                 <legend class="formacio">Formació Bàsica</legend>
                 <label for="nom">Nom: </label>
-                <input type="text" id="nom" name="nom" required>
-
-                <label for="edat">Edat: </label>
-                <input type="number" id="edat" name="edat" required>
-
-                <label for="estudis">Estudis: </label>
-                <select id="estudis" name="estudis" required>
-                    <option value="">Selecciona els teus estudis</option>
+                <input type="text" id="nom" name="nombre" required>    
+                <br>
+                <label for="altura">Altura (en cm): </label>
+                <input type="number" id="altura" name="altura" min="0" max="300" value="170" required>
+                <br>
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="fechanac"> Fecha de Nacimiento:</label>
+                <input type="date" name="fecha">
+                <br>
+            </fieldset>
+            <fieldset>
+                <legend class="nacionalidad">Nacionalitat</legend>
+                    <div>
+                        <input type="radio" id="Española" name="nacionalidad" value="Española" >
+                        <label for="Española">Española</label>
+                    
+                        <input type="radio" id="Comunitario(UE)" name="nacionalidad" value="Comunitario(UE)">
+                        <label for="Comunitario(UE)">Comunitario(UE)</label>
+                    
+                        <input type="radio" id="No comunitario" name="nacionalidad" value="No comunitario">
+                        <label for="No comunitario">No comunitario</label>
+                    </div>
+            </fieldset>
+            <fieldset>
+                <legend class="estudios">Estudis</legend>
+                <label for="estudios">Estudis: </label>
+                <select type="checkbox" id="estudios" name="estudios" required>
+                    <options>Selecciona els teus estudis</option>
                     <option value="ESO">ESO</option>
                     <option value="GM">GM</option>
                     <option value="GS">GS</option>
@@ -28,24 +50,17 @@
                 </select>
             </fieldset>
             <fieldset>
-                <legend class="nacionalidad">Nacionalitat</legend>
-                <label for="nacionalitat">Nacionalitat: </label>
-                <input type="text" id="nacionalitat" name="nacionalitat" required>
-            </fieldset>
-            <fieldset>
-                <legend class="idiomes">Idiomes</legend>
-                <label for="idiomes">Idiomes: </label>
-                <input type="text" id="idiomes" name="idiomes" required>
-            </fieldset>
-            <fieldset>
-                <legend class="altura">Altura</legend>
-                <label for="altura">Altura (en cm): </label>
-                <input type="number" id="altura" name="altura" min="0" max="300" value="170" required>
-            </fieldset>
-            <fieldset>
-                <legend class="email">Email</legend>
-                <label for="email">Email: </label>
-                <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                <legend>Idiomes</legend>
+                <div>
+                    <input type="checkbox" id="Catalán" name="idiomas[]" value="Catalán">
+                    <label for="Catalán">Catalán</label>
+                    <input type="checkbox" id="Castellano" name="idiomas[]" value="Castellano">
+                    <label for="Castellano">Castellano</label>
+                    <input type="checkbox" id="Inlges" name="idiomas[]" value="Inlges">
+                    <label for="Inlges">GM</label>
+                    <input type="checkbox" id="Chino" name="idiomas[]" value="Chino">
+                    <label for="Chino">Chino</label>
+                </div>
             </fieldset>
             <input type="submit" value="Inscriure's">
         </form>
