@@ -49,6 +49,14 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #45a049;
 }
+input[type="reset"] {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: red;
+}
 .formacio {
     color: blue;
     font-style: italic;
