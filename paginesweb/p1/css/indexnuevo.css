@@ -77,7 +77,8 @@ main {
 }
 
 main img {
-    width: 89%; 
+    width: 89%;
+    height: 50%; 
 }
 
 aside {
@@ -88,8 +89,8 @@ aside {
     height: 830px;
 }
 aside img {
-    width: 89%;
-    height: 89%;
+    width: 50%;
+    height: 50%;
 }
 section::after {
     content: "";
