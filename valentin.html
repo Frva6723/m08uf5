@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Serás mi San Valentín? 💖</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+        
+        body {
+            font-family: 'Dancing Script', cursive;
+            text-align: center;
+            background-color: #ffe6f2;
+            padding: 50px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            display: inline-block;
+        }
+        h1 {
+            color: #ff4081;
+            font-size: 2.5em;
+        }
+        .gif-container {
+            margin: 20px 0;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .yes {
+            background-color: #ff4081;
+            color: white;
+        }
+        .no {
+            background-color: #ccc;
+            color: black;
+            position: absolute;
+        }
+        p {
+            font-size: 1.5em;
+            color: #ff4081;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="content">
+        <h1>¿Quieres ser mi San Valentín? 💕</h1>
+        <div class="gif-container">
+            <img src="https://i.pinimg.com/originals/bb/65/53/bb6553860420324d73f43ded9cdd82a3.gif" alt="Gif romántico" width="250">
+        </div>
+        <div class="buttons">
+            <button class="yes" onclick="mostrarRespuesta()">Sí 😍</button>
+            <button class="no" onmouseover="moverBoton(this)">No 🙈</button>
+        </div>
+    </div>
+    
+    <script>
+        function moverBoton(boton) {
+            let x = Math.random() * (window.innerWidth - boton.offsetWidth);
+            let y = Math.random() * (window.innerHeight - boton.offsetHeight);
+            boton.style.left = `${x}px`;
+            boton.style.top = `${y}px`;
+        }
+
+        function mostrarRespuesta() {
+            document.getElementById("content").innerHTML = `
+                <h1>¡Sabía que dirías que sí! 💖</h1>
+                <div class="gif-container">
+                    <img src="https://i.pinimg.com/originals/32/64/bc/3264bcc47ee47ebbdd441f9f1d203542.gif" alt="Gif feliz" width="250">
+                </div>
+                <p>Alba, quiero que sepas lo mucho que te quiero. 💕</p>
+                <p>Me encanta tu sonrisa, tu forma de ser y cómo me iluminas el día estando en llamada contigo. 
+                Eres especial para mí, y no hay nadie con quien prefiera pasar este San Valentín. 
+                Gracias por hacer mi mundo más bonito. ❤️</p>
+            `;
+        }
+    </script>
+</body>
+</html>
